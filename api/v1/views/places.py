@@ -79,7 +79,7 @@ def put_place(place_id):
 
     for ky, vl in rqst.items():
         if ky not in ['id', 'user_id', 'city_at',
-                     'created_at', 'updated_at']:
+                      'created_at', 'updated_at']:
             setattr(place, ky, vl)
 
     storage.save()
